@@ -611,6 +611,51 @@ img {
   align-content: space-between;
 }
 
+.add-card {
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+}
+
+.add-card2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  transition: transform 0.2s linear;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: flex;
+  padding: 49px 45px 49px 24px;
+}
+
+.project1:hover .add-card2,
+.project2:hover .add-card2,
+.project3:hover .add-card2,
+.project4:hover .add-card2,
+.project5:hover .add-card2,
+.project6:hover .add-card2,
+.project7:hover .add-card2,
+.project8:hover .add-card2,
+.project9:hover .add-card2,
+.project1:focus .add-card2,
+.project2:focus .add-card2,
+.project3:focus .add-card2,
+.project4:focus .add-card2,
+.project5:focus .add-card2,
+.project6:focus .add-card2,
+.project7:focus .add-card2,
+.project8:focus .add-card2,
+.project9:focus .add-card2 {
+  transform: translate(0, 0);
+}
+
 .project1,
 .project2,
 .project3,
@@ -769,26 +814,23 @@ img {
   position: relative;
 }
 
-.current-agency::after {
+.current-agency::after,
+.current-portfolio::after {
   content: '';
   display: inline-block;
   position: absolute;
-  width: 53px;
   height: 4px;
-  left: 0px;
   top: 45.5px;
   background: #2196f3;
   border-radius: 2px;
 }
 
+.current-agency::after {
+  width: 53px;
+  left: 0px;
+}
+
 .current-portfolio::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
   width: 58px;
-  height: 4px;
   left: 99px;
-  top: 45.5px;
-  background: #2196f3;
-  border-radius: 2px;
 }
