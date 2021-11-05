@@ -182,6 +182,10 @@
   background-color: #2196f3;
 }
 
+.team-card-link:hover svg {
+  fill: white;
+}
+
 .strengths h3 {
   font-weight: bold;
   font-size: 14px;
