@@ -156,13 +156,6 @@
   fill: #ffffff;
 }
 
-.instagram-icon:hover,
-.linkedin-icon:hover,
-.twitter-icon:hover,
-.facebook-icon:hover {
-  fill: #ffffff;
-}
-
 .team-card-link {
   display: flex;
   width: 44px;
@@ -190,8 +183,26 @@
   background-color: #2196f3;
 }
 
+.team-card-link,
+.footer-card-link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contact a:hover svg {
+  fill: #2196f3;
+}
+
 .team-card-link:hover svg {
   fill: white;
+}
+
+.menu-mail svg,
+.menu-tel svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .strengths h3 {
@@ -245,6 +256,12 @@
   fill: #2196f3;
 }
 
+.clients-icon-background svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .clients-icon-background {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -252,6 +269,12 @@
 
 .clients-icon-background:hover {
   border-color: #2196f3;
+}
+
+.clients-icon-background {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work .container {
@@ -549,6 +572,12 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button {
+  transition-property: color, background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .title {
   font-size: 16px;
   line-height: 187%;
@@ -595,6 +624,10 @@ img {
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project1:hover,
@@ -725,14 +758,37 @@ img {
   fill: #757575;
 }
 
-.menu-mail svg:hover,
-.menu-tel svg:hover {
-  fill: #2196f3;
-}
-
 .menu-tel {
   width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-nav {
+  position: relative;
+}
+
+.current-agency::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  left: 0px;
+  top: 45.5px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.current-portfolio::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  left: 99px;
+  top: 45.5px;
+  background: #2196f3;
+  border-radius: 2px;
 }
