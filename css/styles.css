@@ -57,6 +57,14 @@
   color: #2196f3;
 }
 
+.menu-nav li a,
+.menu-contact a,
+.address-list a {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-nav a:visited,
 .menu-contact a:visited,
 .address-list a:visited {
@@ -254,6 +262,28 @@
   width: 1170px;
   display: flex;
   justify-content: space-between;
+}
+
+.work-photo-fig {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-photo-fig figcaption {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .work h2,
